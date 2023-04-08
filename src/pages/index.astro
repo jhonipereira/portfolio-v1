@@ -4,49 +4,31 @@ import Card from "../components/Card.astro";
 ---
 
 <Layout title="Jhoni Pereira's Website">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Portfolio</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br
-			/>
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
+	<main class="container mx-auto">
+		
+
+		<div class="grid md:grid-cols-2 justify-center align-items-center">
+			
+			<div class="lg:mr-28">
+				<h1 class="font-bold -mb-5 text-5xl">
+					<span class="block">Hi there!</span>
+				</h1>
+				<p class="mb-5 text-3xl">I'm a software developer based in Brazil. With 12 years of experience as a Fullstack developer at xxxxx  and 8 years as a Frontend developer at xxxx remotely.</p>
+				
+				<p class="mb-5">I have a passion for ...</p>
+				
+			</div>
+			<div class="">
+				<img src="/profile.png" alt="Jhoni Pereira" class="rounded-full max-w-sm shadow-xl w-1/2 lg:w-full">
+			</div>
+
+			
+		</div>
 	</main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
+	
 	.text-gradient {
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;
@@ -80,3 +62,27 @@ import Card from "../components/Card.astro";
 		padding: 0;
 	}
 </style>
+
+
+<!-- <ul role="list" class="link-card-grid">
+			<Card
+				href="https://docs.astro.build/"
+				title="Documentation"
+				body="Learn how Astro works and explore the official API docs."
+			/>
+			<Card
+				href="https://astro.build/integrations/"
+				title="Integrations"
+				body="Supercharge your project with new frameworks and libraries."
+			/>
+			<Card
+				href="https://astro.build/themes/"
+				title="Themes"
+				body="Explore a galaxy of community-built starter themes."
+			/>
+			<Card
+				href="https://astro.build/chat/"
+				title="Community"
+				body="Come say hi to our amazing Discord community. ❤️"
+			/>
+		</ul> -->
