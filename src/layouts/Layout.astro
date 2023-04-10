@@ -36,8 +36,8 @@ const { title, description } = Astro.props;
 </html>
 <style is:global>
 	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+		--accent: 20, 162, 243;
+		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #27ebf4 30%, white 60%); 
 	}
 	html {
 		font-family: 'vollkornregular', system-ui, sans-serif;
@@ -70,5 +70,13 @@ const { title, description } = Astro.props;
 			url('fonts/vollkorn-bold-webfont.woff') format('woff');
 		font-weight: normal;
 		font-style: normal;
+	}
+
+	.content a{
+		color: rgb(19 172 226 / var(--tw-text-opacity));
+	}
+
+	.content p{
+		margin-bottom: 15px;
 	}
 </style>

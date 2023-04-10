@@ -3,27 +3,81 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 ---
 
-<Layout title="Jhoni Pereira's Website">
-	<main class="container mx-auto">
+<Layout title="Jhoni Pereira">
+	<main class="container mx-auto px-5 md:px-0 md:max-w-6xl">
 		
 
-		<div class="grid md:grid-cols-2 justify-center align-items-center">
+		<div class="grid md:grid-cols-3 gap-0 justify-center align-items-center mt-16 mb-10 relative">
 			
-			<div class="lg:mr-28">
-				<h1 class="font-bold -mb-5 text-5xl">
-					<span class="block">Hi there!</span>
+			<div class="text-2xl col-span-2 text-center md:text-left bg-slate-700 border-slate-600 md:-mx-10 md:-my-8 px-2 md:px-10 md:py-8 md:pb-0 border-2 ">
+				<h1 class="font-bold text-5xl mb-5 mt-2">
+					<span class="block">👋🏾 Hi there!</span>
 				</h1>
-				<p class="mb-5 text-3xl">I'm a software developer based in Brazil. With 12 years of experience as a Fullstack developer at xxxxx  and 8 years as a Frontend developer at xxxx remotely.</p>
-				
-				<p class="mb-5">I have a passion for ...</p>
+				<p class="">I'm a Brazilian software developer with 12 years of experience in web development, and I'm all about solving problems and creating awesome applications for people.</p>
+				<br>
+				<p class="mb-5">Besides coding, I have a passion for my family, sports, fitness, culinary, TV series, and my beloved dog 🐶.</p>
 				
 			</div>
-			<div class="">
-				<img src="/profile.png" alt="Jhoni Pereira" class="rounded-full max-w-sm shadow-xl w-1/2 lg:w-full">
+			<div class="text-center mb-6 md:mb-0 order-first md:order-last">
+				<img src="/profile.png" alt="Jhoni Pereira" class="rounded-full md:rounded-none max-w-xs inline-block shadow-xl md:w-full">
 			</div>
-
-			
 		</div>
+
+		<div class="container max-w-4xl mx-auto my-4 md:mt-24 text-center md:text-left">
+			<h2 class="font-bold text-5xl mb-5 md:mb-8">About Me</h2>
+
+			<article class="mb-10 md:mb-16 content text-2xl">
+				<p>Currently, I work remotely at <a href="https://www.tidea.com.br/" rel="noopener noreferrer" target="_blank">Tidea</a>, helping organizations shape their technology visions, execute their digital transformation journeys, and reinvent their businesses to create value from their technology investments.</p>
+				
+				<p>⌛️ Over the past 12 years, I've worked with HTML, CSS, SASS, Javascript, jQuery, PHP and Laravel.</p>
+
+				<p>✅ I've been working with React and Next.js for <span>about 3~4 years</span> now.</p>
+
+				<p>🚀 In the near future, I'm interested in learning Svelte, SvelteKit and GO.</p>
+				
+				<p>Feel free to check out my <a href="#portfolio">portfolio</a>.</p>
+				
+			</article>
+			<article class="mb-10 md:mb-16 content text-2xl">
+				<h2 class="font-bold text-5xl mb-5 md:mb-8">Industries I have worked in:</h2>
+				
+				<p>I have over twelve years of experience working for large to small organisations in: Health, Events, Digital Products, Lawtech, Real State, Insurance & Educational.</p>
+			</article>
+
+			<article id="portfolio" class="mb-10 md:mb-16 content text-2xl">
+				<h2 class="font-bold text-5xl mb-5 md:mb-8">Portfolio</h2>
+				
+				<div class="grid md:grid-cols-2 gap-3">
+					<Card
+						href="https://www.vpgclubedebeneficios.com.br/"
+						title="VPG Benefits Club"
+						body=""
+						image="/portfolio/1.jpg"
+					/>
+					<Card
+						href="https://www.dentsplysirona.com/pt-br"
+						title="Forte Beer App (React Native)"
+						body=""
+						image="/portfolio/2.jpg"
+					/>
+					<Card
+						href="https://apps.apple.com/lc/app/forte-beer/id1589865870"
+						title="Dentsply Sirona"
+						body=""
+						image="/portfolio/3.jpg"
+					/>
+					<Card
+						href="https://www.eduzz.com/pt-br/produtos/blinket"
+						title="Eduzz (Blinket)"
+						body=""
+						image="/portfolio/4.jpg"
+					/>
+					
+				</div>
+				
+			</article>
+		</div>
+
 	</main>
 </Layout>
 
@@ -62,27 +116,3 @@ import Card from "../components/Card.astro";
 		padding: 0;
 	}
 </style>
-
-
-<!-- <ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul> -->
